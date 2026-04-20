@@ -9,7 +9,7 @@
 ---
 
 ### Who We Are
-We are a research group of students from Conestoga College. Our team—Abhinav Venkat Sivakumar, Blessed Cheryl Kevin, Anh Dung Phan, Darshita Jagdishkumar Patel, and Jonathan Ward—is dedicated to analyzing the intersection of technology and sustainability. This website serves as a repository for our findings as we examine the role of computer science in the modern climate era.
+We are a research group of students from Conestoga College. Our team Abhinav Venkat Sivakumar, Blessed Cheryl Kevin, Anh Dung Phan, Darshita Jagdishkumar Patel, and Jonathan Ward is dedicated to analyzing the intersection of technology and sustainability. This website serves as a repository for our findings as we examine the role of computer science in the modern climate era.
 
 ### What We Are Doing
 Our group is conducting a study on the bidirectional relationship between computing and climate change. We are looking at how the industry functions as both a powerful tool for environmental protection and a significant source of energy consumption. Through this project, we are organizing technical data into a clear resource for students, researchers, and professionals.
