@@ -8,8 +8,8 @@
 
 ## The Research Group
 [cite_start]Our team is composed of five members dedicated to analyzing the bidirectional relationship between technology and the environment[cite: 24]:
-* **Abhinav Venkat Sivakumar**
-* **Gayathiri**
+* **Abhinav Venkat**
+* **Blessed Cheryl Kevin**
 * **Anh Dung Phan**
 * **Darshita Jagdishkumar Patel**
 * **Jonathan Ward**
