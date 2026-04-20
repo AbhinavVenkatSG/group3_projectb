@@ -1,189 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pros | Computing for a Sustainable Future</title>
-    <meta name="description" content="Exploring the positive impacts of computer science in combating climate change.">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pros | Computing and Climate Change</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">CS & Climate</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pros.html" class="active">Pros</a></li>
-                <li><a href="cons.html">Cons</a></li>
-                <li><a href="ethics.html">Ethics & IP</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="references.html">References</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body data-page="pros">
+        <div id="header-placeholder"></div>
 
-    <main>
-        <section class="section" id="hero">
-            <h1>Positive Impacts of Computer Science on Climate Change</h1>
-            <p class="subtitle">How technology is helping us monitor, model, and mitigate the global climate crisis.</p>
-        </section>
+        <main>
+            <section class="section" id="hero">
+                <h1>
+                    Positive Impacts of Computer Technology on the Environment
+                </h1>
+                <p class="subtitle">
+                    How technology is helping us monitor, model, and mitigate
+                    the global climate crisis.
+                </p>
+            </section>
 
-        <section class="section">
-            <h2>1. Real-Time Environmental Monitoring</h2>
-            <p>Digital devices act as the "nervous system" for the planet, using sensors and satellites to provide immediate data on environmental shifts.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>IoT & Mobile Sensors</h3>
-                    <p>Interconnected devices and mobile tools gather real-time data on air quality, water levels, and temperature, which is essential for adapting to climate risks.</p>
-                </div>
-                <div class="card">
-                    <h3>Earth Observation</h3>
-                    <p>Remote sensing via satellites tracks large-scale changes like melting glaciers, sea-level rise, and atmospheric carbon dioxide concentrations.</p>
-                </div>
-                <div class="card">
-                    <h3>Adaptive Management</h3>
-                    <p>This constant stream of data allows decision-makers to allocate resources efficiently during climate events, such as tracking wildfire paths or flood stages.</p>
-                </div>
-            </div>
-            
-            <div class="data-box">
-                <h4>Lake Urmia: A Visual Example of Environmental Change</h4>
-                <p>Lake Urmia in Iran was once one of the largest hypersaline lakes in the world. Use the slider to compare satellite images showing the lake when it was filled (June 2021) versus when it had dried significantly (November 2021). This demonstrates how digital monitoring documents climate shifts.</p>
-                
-                <div class="comparison-slider-container">
-                    <div class="comparison-image-wrapper" id="lakeUrmiaSlider">
-                        <img src="images/lake_urmia_nov_2021_after.jpg" alt="Lake Urmia - November 2021 (After)" class="comparison-img-bottom">
-                        <div class="comparison-img-top-wrapper">
-                            <img src="images/lake_urmia_june_2021_before.jpg" alt="Lake Urmia - June 2021 (Before)" class="comparison-img-top">
-                        </div>
-                        <div class="comparison-slider-handle">
-                            <span class="slider-arrow">&#8644;</span>
-                        </div>
+            <section class="section">
+                <h2>1. Real-Time Environmental Monitoring</h2>
+                <p>
+                    Digital devices act as the "nervous system" for the planet,
+                    using sensors and satellites to provide immediate data on
+                    environmental shifts.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>IoT &amp; Mobile Sensors</h3>
+                        <p>
+                            Interconnected devices and mobile tools gather
+                            real-time data on air quality, water levels, and
+                            temperature, which is essential for adapting to
+                            climate risks.
+                        </p>
                     </div>
-                    <div class="comparison-labels">
-                        <span class="label-before">June 2021 - Lake Filled</span>
-                        <span class="label-after">November 2021 - Lake Dried</span>
+                    <div class="card">
+                        <h3>Earth Observation</h3>
+                        <p>
+                            Remote sensing via satellites tracks large-scale
+                            changes like melting glaciers, sea-level rise, and
+                            atmospheric carbon dioxide concentrations.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Adaptive Management</h3>
+                        <p>
+                            This constant stream of data allows decision-makers
+                            to allocate resources efficiently during climate
+                            events, such as tracking wildfire paths or flood
+                            stages.
+                        </p>
                     </div>
                 </div>
-                
-                <p class="source-note"><strong>Source:</strong> NASA Earth Observatory [11]. Images taken by the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument on NASA's Aqua satellite. <a href="https://science.nasa.gov/earth/drying-lake-urmia-iran/" target="_blank">View original source</a></p>
-            </div>
-        </section>
 
-        <section class="section">
-            <h2>2. Advanced Climate Modeling & Simulation</h2>
-            <p>Computing techniques have advanced from simple predictions to "hybrid" and "quantum" models that can handle the massive complexity of the Earth's weather systems.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Hybrid AI Forecasting</h3>
-                    <p>In April 2026, Canada launched a hybrid weather model that combines traditional physics with AI. This allows for predicting major systems (like heat waves or atmospheric rivers) 8 to 24 hours earlier than before.</p>
-                </div>
-                <div class="card">
-                    <h3>Quantum AI Integration</h3>
-                    <p>Researchers at University College London (UCL) have shown that blending quantum computing with AI significantly improves long-term predictions of chaotic systems like fluid dynamics, which are core to climate science.</p>
-                </div>
-                <div class="card">
-                    <h3>Precision Alerts</h3>
-                    <p>Modern tools like NOAA's Probabilistic Winter Storm Severity Index (WSSI-P) help communicate the likelihood of societal impacts from extreme weather over a 7-day period.</p>
-                </div>
-            </div>
-            
-            <div class="data-box">
-                <h4>Climate Spiral Visualization</h4>
-                <p>The climate spiral is a powerful visualization showing global temperature anomalies from 1880 to the present. This animated representation makes complex climate data accessible and understandable for everyone.</p>
-                <div class="video-container">
-                    <video controls autoplay muted loop playsinline>
-                        <source src="videos/GISTEMP_Spiral_English_degC_2160p60.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <p class="source-note"><strong>Source:</strong> NASA's Scientific Visualization Studio [12]. Visualization by Mark SubbaRao and Ed Hawkins, NASA GISS. <a href="https://svs.gsfc.nasa.gov/5190/" target="_blank">View original source</a></p>
-            </div>
-        </section>
+                <div class="data-box">
+                    <h4>
+                        Lake Urmia: A Visual Example of Environmental Change
+                    </h4>
+                    <p>
+                        Lake Urmia in Iran was once one of the largest
+                        hypersaline lakes in the world. Use the slider to
+                        compare satellite images showing the lake when it was
+                        filled (June 2021) versus when it had dried
+                        significantly (November 2021). This demonstrates how
+                        digital monitoring documents climate shifts.
+                    </p>
 
-        <section class="section">
-            <h2>3. Energy Optimization & Logistics</h2>
-            <p>Artificial Intelligence (AI) and algorithms act as "efficiency engines," reducing the carbon footprint of how we move goods and use electricity.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Supply Chain Decarbonization</h3>
-                    <p>AI-enabled interventions in logistics can reduce fuel consumption by 12–15% and avoid up to 1,500 tons of CO2 emissions annually.</p>
+                    <div class="comparison-slider-container">
+                        <div
+                            class="comparison-image-wrapper"
+                            id="lakeUrmiaSlider"
+                        >
+                            <img
+                                src="images/lake_urmia_nov_2021_after.jpg"
+                                alt="Lake Urmia - November 2021 (After)"
+                                class="comparison-img-bottom"
+                            />
+                            <div class="comparison-img-top-wrapper">
+                                <img
+                                    src="images/lake_urmia_june_2021_before.jpg"
+                                    alt="Lake Urmia - June 2021 (Before)"
+                                    class="comparison-img-top"
+                                />
+                            </div>
+                            <div class="comparison-slider-handle">
+                                <span class="slider-arrow">&#8644;</span>
+                            </div>
+                        </div>
+                        <div class="comparison-labels">
+                            <span class="label-before"
+                                >June 2021 - Lake Filled</span
+                            >
+                            <span class="label-after"
+                                >November 2021 - Lake Dried</span
+                            >
+                        </div>
+                    </div>
+                    <p class="source-note">
+                        <strong>Source:</strong> NASA Earth Observatory [11].
+                        Images taken by the Moderate Resolution Imaging
+                        Spectroradiometer (MODIS) instrument on NASA's Aqua
+                        satellite.
+                        <a
+                            href="https://science.nasa.gov/earth/drying-lake-urmia-iran/"
+                            target="_blank"
+                            >View original source</a
+                        >
+                    </p>
                 </div>
-                <div class="card">
-                    <h3>Route Optimization</h3>
-                    <p>Algorithms solve complex "Vehicle Routing Problems" (VRP) by processing GPS and traffic data to calculate paths that minimize idling and fuel use.</p>
-                </div>
-                <div class="card">
-                    <h3>Smart Energy Management</h3>
-                    <p>AI forecasts energy load patterns in factories and data centers, using predictive load balancing to shift high-consumption tasks to off-peak periods.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const wrapper = document.getElementById('lakeUrmiaSlider');
-            if (!wrapper) return;
-            
-            const topWrapper = wrapper.querySelector('.comparison-img-top-wrapper');
-            const handle = wrapper.querySelector('.comparison-slider-handle');
-            
-            if (!topWrapper || !handle) return;
-            
-            function updateSlider(pageX) {
-                const rect = wrapper.getBoundingClientRect();
-                let percentage = ((pageX - rect.left) / rect.width) * 100;
-                percentage = Math.max(0, Math.min(100, percentage));
-                
-                topWrapper.style.width = percentage + '%';
-                handle.style.left = percentage + '%';
-            }
-            
-            // Mouse events
-            wrapper.addEventListener('mousemove', function(e) {
-                updateSlider(e.pageX);
-            });
-            
-            // Touch events for mobile
-            wrapper.addEventListener('touchmove', function(e) {
-                e.preventDefault();
-                if (e.touches.length > 0) {
-                    updateSlider(e.touches[0].pageX);
+            <section class="section">
+                <h2>2. Advanced Climate Modeling &amp; Simulation</h2>
+                <p>
+                    Computing techniques have advanced from simple predictions
+                    to "hybrid" and "quantum" models that can handle the massive
+                    complexity of the Earth's weather systems.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Hybrid AI Forecasting</h3>
+                        <p>
+                            In April 2026, Canada launched a hybrid weather
+                            model that combines traditional physics with AI.
+                            This allows for predicting major systems (like heat
+                            waves or atmospheric rivers) 8 to 24 hours earlier
+                            than before.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Quantum AI Integration</h3>
+                        <p>
+                            Researchers at University College London (UCL) have
+                            shown that blending quantum computing with AI
+                            significantly improves long-term predictions of
+                            chaotic systems like fluid dynamics, which are core
+                            to climate science.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Precision Alerts</h3>
+                        <p>
+                            Modern tools like NOAA's Probabilistic Winter Storm
+                            Severity Index (WSSI-P) help communicate the
+                            likelihood of societal impacts from extreme weather
+                            over a 7-day period.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data-box">
+                    <h4>Climate Spiral Visualization</h4>
+                    <p>
+                        The climate spiral is a powerful visualization showing
+                        global temperature anomalies from 1880 to the present.
+                        This animated representation makes complex climate data
+                        accessible and understandable for everyone.
+                    </p>
+                    <div class="video-container">
+                        <video controls autoplay muted loop playsinline>
+                            <source
+                                src="videos/GISTEMP_Spiral_English_degC_2160p60.mp4"
+                                type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="source-note">
+                        <strong>Source:</strong> NASA's Scientific Visualization
+                        Studio [12]. Visualization by Mark SubbaRao and Ed
+                        Hawkins, NASA GISS.
+                        <a
+                            href="https://svs.gsfc.nasa.gov/5190/"
+                            target="_blank"
+                            >View original source</a
+                        >
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>3. Energy Optimization &amp; Logistics</h2>
+                <p>
+                    Artificial Intelligence (AI) and algorithms act as
+                    "efficiency engines," reducing the carbon footprint of how
+                    we move goods and use electricity.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Supply Chain Decarbonization</h3>
+                        <p>
+                            AI-enabled interventions in logistics can reduce
+                            fuel consumption by 12–15% and avoid up to 1,500
+                            tons of CO2 emissions annually.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Route Optimization</h3>
+                        <p>
+                            Algorithms solve complex "Vehicle Routing Problems"
+                            (VRP) by processing GPS and traffic data to
+                            calculate paths that minimize idling and fuel use.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Smart Energy Management</h3>
+                        <p>
+                            AI forecasts energy load patterns in factories and
+                            data centers, using predictive load balancing to
+                            shift high-consumption tasks to off-peak periods.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const wrapper = document.getElementById("lakeUrmiaSlider");
+                if (!wrapper) return;
+
+                const topWrapper = wrapper.querySelector(
+                    ".comparison-img-top-wrapper",
+                );
+                const handle = wrapper.querySelector(
+                    ".comparison-slider-handle",
+                );
+
+                if (!topWrapper || !handle) return;
+
+                function updateSlider(pageX) {
+                    const rect = wrapper.getBoundingClientRect();
+                    let percentage = ((pageX - rect.left) / rect.width) * 100;
+                    percentage = Math.max(0, Math.min(100, percentage));
+
+                    topWrapper.style.width = percentage + "%";
+                    handle.style.left = percentage + "%";
                 }
-            }, { passive: false });
-            
-            // Click to jump
-            wrapper.addEventListener('click', function(e) {
-                updateSlider(e.pageX);
+
+                // Mouse events
+                wrapper.addEventListener("mousemove", function (e) {
+                    updateSlider(e.pageX);
+                });
+
+                // Touch events for mobile
+                wrapper.addEventListener(
+                    "touchmove",
+                    function (e) {
+                        e.preventDefault();
+                        if (e.touches.length > 0) {
+                            updateSlider(e.touches[0].pageX);
+                        }
+                    },
+                    { passive: false },
+                );
+
+                // Click to jump
+                wrapper.addEventListener("click", function (e) {
+                    updateSlider(e.pageX);
+                });
             });
-        });
-    </script>
+        </script>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About This Project</h4>
-                <p>This website was created by a research group exploring how computer science affects our climate. We aim to make complex topics accessible to everyone.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <p><a href="index.html" style="color: white;">Home</a> | <a href="pros.html" style="color: white;">Pros</a> | <a href="cons.html" style="color: white;">Cons</a></p>
-                <p><a href="ethics.html" style="color: white;">Ethics</a> | <a href="team.html" style="color: white;">Team</a> | <a href="references.html" style="color: white;">References</a></p>
-            </div>
-            <div class="footer-section">
-                <h4>License</h4>
-                <p>This work is licensed under Creative Commons CC BY-NC-SA 4.0.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Research Group | Conestoga College
-        </div>
-    </footer>
+        <div id="footer-placeholder"></div>
 
-</body>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/footer.js"></script>
+    </body>
 </html>

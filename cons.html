@@ -1,133 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cons | Computing for a Sustainable Future</title>
-    <meta name="description" content="Understanding the negative environmental impacts of computing technology.">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cons | Computing and Climate Change</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
 
-    <header>
-        <nav>
-            <a href="index.html" class="logo">CS & Climate</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pros.html">Pros</a></li>
-                <li><a href="cons.html" class="active">Cons</a></li>
-                <li><a href="ethics.html">Ethics & IP</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="references.html">References</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body data-page="cons">
+        <div id="header-placeholder"></div>
 
-    <main>
-        <section class="section" id="hero">
-            <h1>Negative Impacts of Computer Science on Climate Change</h1>
-            <p class="subtitle">Understanding how computing technology contributes to environmental challenges.</p>
-        </section>
+        <main>
+            <section class="section" id="hero">
+                <h1>
+                    Negative Impacts of Computer Technology on the Environment
+                </h1>
+                <p class="subtitle">
+                    Understanding how computing technology contributes to
+                    environmental challenges.
+                </p>
+            </section>
 
-        <section class="section">
-            <h2>1. The Global Energy Surge</h2>
-            <p>The Information and Communications Technology (ICT) sector is a significant driver of global power demand. According to the International Energy Agency (IEA), global electricity demand is projected to grow by 3.5% annually through 2030, with data centers and AI being the primary engines of this increase [13].</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Projected Growth</h3>
-                    <p>By 2030, the increase in global power consumption will be equivalent to adding two European Unions to the global grid.</p>
+            <section class="section">
+                <h2>1. The Global Energy Surge</h2>
+                <p>
+                    The Information and Communications Technology (ICT) sector
+                    is a significant driver of global power demand. According to
+                    the International Energy Agency (IEA), global electricity
+                    demand is projected to grow by 3.5% annually through 2030,
+                    with data centers and AI being the primary engines of this
+                    increase [13].
+                </p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Projected Growth</h3>
+                        <p>
+                            By 2030, the increase in global power consumption
+                            will be equivalent to adding two European Unions to
+                            the global grid.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Carbon Intensity</h3>
+                        <p>
+                            Because much of this power is drawn from
+                            carbon-emitting sources, the digital economy
+                            directly contributes to the global warming cycle.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>AI as Energy Driver</h3>
+                        <p>
+                            Artificial intelligence and data centers are
+                            outpacing other industries in energy needs, creating
+                            unprecedented demand on power grids worldwide.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Carbon Intensity</h3>
-                    <p>Because much of this power is drawn from carbon-emitting sources, the digital economy directly contributes to the global warming cycle.</p>
-                </div>
-                <div class="card">
-                    <h3>AI as Energy Driver</h3>
-                    <p>Artificial intelligence and data centers are outpacing other industries in energy needs, creating unprecedented demand on power grids worldwide.</p>
-                </div>
-            </div>
-            
-            <div class="data-box">
-                <h4>Global Electricity Demand Growth</h4>
-                <img src="images/Cons/global-electricity-average-annual-demand-growth-by-sector-and-end-use-2015-2030.png" alt="Global Electricity Average Annual Demand Growth by Sector and End Use 2015-2030" style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0;">
-                <p class="source-note"><strong>Source:</strong> International Energy Agency (IEA) [13]. <a href="https://www.iea.org/data-and-statistics/charts/global-electricity-average-annual-demand-growth-by-sector-and-end-use-2015-2030" target="_blank">View original source</a></p>
-            </div>
-        </section>
 
-        <section class="section">
-            <h2>2. The Cost of Data Centers and AI</h2>
-            <p>Data centers are the physical backbone of the digital world, but their environmental footprint is massive [14].</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Infrastructure Scale</h3>
-                    <p>Global data center energy use is expected to hit 1,050 TWh by 2026—effectively making data centers the world's 5th largest energy consumer if they were a country.</p>
+                <div class="data-box">
+                    <h4>Global Electricity Demand Growth</h4>
+                    <img
+                        src="images/Cons/global-electricity-average-annual-demand-growth-by-sector-and-end-use-2015-2030.png"
+                        alt="Global Electricity Average Annual Demand Growth by Sector and End Use 2015-2030"
+                        style="
+                            max-width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                            margin: 20px 0;
+                        "
+                    />
+                    <p class="source-note">
+                        <strong>Source:</strong> International Energy Agency
+                        (IEA) [13].
+                        <a
+                            href="https://www.iea.org/data-and-statistics/charts/global-electricity-average-annual-demand-growth-by-sector-and-end-use-2015-2030"
+                            target="_blank"
+                            >View original source</a
+                        >
+                    </p>
                 </div>
-                <div class="card">
-                    <h3>The AI Tax</h3>
-                    <p>A single AI query (like ChatGPT) uses approximately <strong>3 Wh</strong> of energy, which is <strong>10 times more</strong> than a standard Google search (0.3 Wh) [15][16].</p>
-                </div>
-                <div class="card">
-                    <h3>Training Emissions</h3>
-                    <p>Training a large language model like GPT-4 required an estimated 1,750 MWh, highlighting the massive "upfront" carbon cost of AI innovation.</p>
-                </div>
-            </div>
-            
-            <div class="data-box">
-                <h4>AI vs. Search Engine Energy Consumption</h4>
-                <img src="images/Cons/Screenshot 2026-04-19 222507.png" alt="AI Query Energy Consumption Comparison" style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0;">
-                <p class="source-note"><strong>Source:</strong> ReadySetCompute and Kanoppi research comparisons [15][16]. <a href="https://readysetcompute.com/aienergy/" target="_blank">View original source</a></p>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2>3. Crypto Mining & Hardware Lifecycle</h2>
-            <p>The negative impact of computing starts at the manufacturing plant and ends at the mining rig [17].</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Bitcoin Consumption</h3>
-                    <p>The Bitcoin network annually consumes 160–204 TWh, surpassing the total electricity usage of countries like Argentina or Thailand.</p>
+            <section class="section">
+                <h2>2. The Cost of Data Centers and AI</h2>
+                <p>
+                    Data centers are the physical backbone of the digital world,
+                    but their environmental footprint is massive [14].
+                </p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Infrastructure Scale</h3>
+                        <p>
+                            Global data center energy use is expected to hit
+                            1,050 TWh by 2026—effectively making data centers
+                            the world's 5th largest energy consumer if they were
+                            a country.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>The AI Tax</h3>
+                        <p>
+                            A single AI query (like ChatGPT) uses approximately
+                            <strong>3 Wh</strong> of energy, which is
+                            <strong>10 times more</strong> than a standard
+                            Google search (0.3 Wh) [15][16].
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Training Emissions</h3>
+                        <p>
+                            Training a large language model like GPT-4 required
+                            an estimated 1,750 MWh, highlighting the massive
+                            "upfront" carbon cost of AI innovation.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Manufacturing vs. Use</h3>
-                    <p>For a typical smartphone, up to <strong>80%</strong> of its lifetime carbon emissions occur during raw material acquisition and production, not during its actual use.</p>
-                </div>
-                <div class="card">
-                    <h3>E-Waste Crisis</h3>
-                    <p>The demand for high-end GPUs and minerals like lithium for data center batteries is expected to double by 2030, leading to increased mining-related environmental degradation.</p>
-                </div>
-            </div>
-            
-            <div class="data-box">
-                <h4>Bitcoin Energy Consumption Statistics</h4>
-                <img src="images/Cons/bitcoin-energy-consumpti.jpeg" alt="Bitcoin Energy Consumption Statistics" style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0;">
-                <p class="source-note"><strong>Source:</strong> Digiconomist Bitcoin Energy Consumption Index [17]. <a href="https://buybitcoinworldwide.com/bitcoin-mining-statistics/" target="_blank">View original source</a></p>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About This Project</h4>
-                <p>This website was created by a research group exploring how computer science affects our climate. We aim to make complex topics accessible to everyone.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <p><a href="index.html" style="color: white;">Home</a> | <a href="pros.html" style="color: white;">Pros</a> | <a href="cons.html" style="color: white;">Cons</a></p>
-                <p><a href="ethics.html" style="color: white;">Ethics</a> | <a href="team.html" style="color: white;">Team</a> | <a href="references.html" style="color: white;">References</a></p>
-            </div>
-            <div class="footer-section">
-                <h4>License</h4>
-                <p>This work is licensed under Creative Commons CC BY-NC-SA 4.0.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Research Group | Conestoga College
-        </div>
-    </footer>
+                <div class="data-box">
+                    <h4>AI vs. Search Engine Energy Consumption</h4>
+                    <img
+                        src="images/Cons/Screenshot 2026-04-19 222507.png"
+                        alt="AI Query Energy Consumption Comparison"
+                        style="
+                            max-width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                            margin: 20px 0;
+                        "
+                    />
+                    <p class="source-note">
+                        <strong>Source:</strong> ReadySetCompute and Kanoppi
+                        research comparisons [15][16].
+                        <a
+                            href="https://readysetcompute.com/aienergy/"
+                            target="_blank"
+                            >View original source</a
+                        >
+                    </p>
+                </div>
+            </section>
 
-</body>
+            <section class="section">
+                <h2>3. Crypto Mining &amp; Hardware Lifecycle</h2>
+                <p>
+                    The negative impact of computing starts at the manufacturing
+                    plant and ends at the mining rig [17].
+                </p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Bitcoin Consumption</h3>
+                        <p>
+                            The Bitcoin network annually consumes 160–204 TWh,
+                            surpassing the total electricity usage of countries
+                            like Argentina or Thailand.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Manufacturing vs. Use</h3>
+                        <p>
+                            For a typical smartphone, up to
+                            <strong>80%</strong> of its lifetime carbon
+                            emissions occur during raw material acquisition and
+                            production, not during its actual use.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>E-Waste Crisis</h3>
+                        <p>
+                            The demand for high-end GPUs and minerals like
+                            lithium for data center batteries is expected to
+                            double by 2030, leading to increased mining-related
+                            environmental degradation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data-box">
+                    <h4>Bitcoin Energy Consumption Statistics</h4>
+                    <img
+                        src="images/Cons/bitcoin-energy-consumpti.jpeg"
+                        alt="Bitcoin Energy Consumption Statistics"
+                        style="
+                            max-width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                            margin: 20px 0;
+                        "
+                    />
+                    <p class="source-note">
+                        <strong>Source:</strong> Digiconomist Bitcoin Energy
+                        Consumption Index [17].
+                        <a
+                            href="https://buybitcoinworldwide.com/bitcoin-mining-statistics/"
+                            target="_blank"
+                            >View original source</a
+                        >
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-placeholder"></div>
+
+        <script src="scripts/header.js"></script>
+        <script src="scripts/footer.js"></script>
+    </body>
 </html>
