@@ -35,11 +35,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    background: var(--bg-color);
     z-index: 1000;
-    transition: var(--transition);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    background-color: #ffffff;
-    width: 100%;
+    height: var(--nav-height);
 }
 
 header.scrolled {
@@ -76,9 +76,39 @@ nav {
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: var(--bg-color);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
 }
 
 .nav-links a {
