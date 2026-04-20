@@ -24,11 +24,21 @@ const footerHTML = `
         </div>
         <div class="footer-section">
             <h4>License</h4>
-            <p>The content of this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).</a></p>
+            <p>
+                The content of this site is licensed under a
+                <a
+                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                    International license (CC BY-NC-SA 4.0).</a
+                >
+            </p>
         </div>
     </div>
     <div class="footer-bottom">
-        © 2026 Abhinav Venkat Sivakumar Gayathiri, Anh Dung Phan, Blessed Cheryl Kevin, Darshita Jagdishkumar Patel, Jonathan Ward.
+        © 2026 Abhinav Venkat Sivakumar Gayathiri, Anh Dung Phan, Blessed Cheryl
+        Kevin, Darshita Jagdishkumar Patel, Jonathan Ward.
     </div>
 </footer>
 `;
@@ -41,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 fetch("components/footer.html")
-    .then(response => response.text())
-    .then(data => {
+    .then((response) => response.text())
+    .then((data) => {
         const placeholder = document.getElementById("footer-placeholder");
         if (placeholder) {
             placeholder.innerHTML = data;
