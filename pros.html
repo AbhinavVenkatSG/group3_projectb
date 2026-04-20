@@ -50,12 +50,25 @@
             
             <div class="data-box">
                 <h4>Lake Urmia: A Visual Example of Environmental Change</h4>
-                <p>Lake Urmia in Iran was once one of the largest hypersaline lakes in the world. This visualization shows how satellite imaging documents the dramatic changes in our environment over time.</p>
-                <div class="comparison-labels" style="margin-bottom: 20px;">
-                    <span>2019 (June) - Lake Replenished</span>
-                    <span>2021 (November) - Lake Drying</span>
+                <p>Lake Urmia in Iran was once one of the largest hypersaline lakes in the world. Use the slider to compare satellite images showing the lake when it was replenished (April 2019) versus when it had dried significantly (September 2023). This demonstrates how digital monitoring documents climate shifts.</p>
+                
+                <div class="comparison-slider-container">
+                    <div class="comparison-image-wrapper">
+                        <img src="images/lake-urmia-dried.jpg" alt="Lake Urmia - September 2023 (Dried)" class="comparison-img-bottom">
+                        <div class="comparison-img-top-wrapper">
+                            <img src="images/lake-urmia-filled.jpg" alt="Lake Urmia - April 2019 (Filled)" class="comparison-img-top">
+                        </div>
+                        <div class="comparison-slider-handle">
+                            <span class="slider-arrow">&#8644;</span>
+                        </div>
+                    </div>
+                    <div class="comparison-labels">
+                        <span class="label-before">April 2019 - Lake Filled</span>
+                        <span class="label-after">September 2023 - Lake Dried</span>
+                    </div>
                 </div>
-                <p class="source-note"><strong>Source:</strong> NASA Earth Observatory. Images taken by the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument on NASA's Aqua satellite. <a href="https://science.nasa.gov/earth/drying-lake-urmia-iran/" target="_blank">View original source</a></p>
+                
+                <p class="source-note"><strong>Source:</strong> NASA Earth Observatory. Images acquired by MODIS on NASA's Terra satellite and OLI-2 on Landsat 9. <a href="https://earthobservatory.nasa.gov/images/144848/reviving-the-shriveled-lake-urmia" target="_blank">View original source</a></p>
             </div>
         </section>
 
@@ -82,13 +95,12 @@
                 <h4>Climate Spiral Visualization</h4>
                 <p>The climate spiral is a powerful visualization showing global temperature anomalies from 1880 to the present. This animated representation makes complex climate data accessible and understandable for everyone.</p>
                 <div class="video-container">
-                    <iframe 
-                        src="https://svs.gsfc.nasa.gov/vis/a000000/a005100/a005190/index.html" 
-                        title="NASA Climate Spiral Visualization"
-                        allowfullscreen>
-                    </iframe>
+                    <video controls autoplay muted loop playsinline>
+                        <source src="videos/climate-spiral.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <p class="source-note"><strong>Source:</strong> NASA's Scientific Visualization Studio. Visualization by Mark SubbaRao and Ed Hawkins. <a href="https://svs.gsfc.nasa.gov/5190/" target="_blank">View original source</a></p>
+                <p class="source-note"><strong>Source:</strong> NASA's Scientific Visualization Studio. Visualization by Mark SubbaRao and Ed Hawkins, NASA GISS. <a href="https://svs.gsfc.nasa.gov/5190/" target="_blank">View original source</a></p>
             </div>
         </section>
 
@@ -117,6 +129,40 @@
             </div>
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.comparison-image-wrapper');
+            const topWrapper = document.querySelector('.comparison-img-top-wrapper');
+            const topImg = document.querySelector('.comparison-img-top');
+            const handle = document.querySelector('.comparison-slider-handle');
+            
+            if (!container || !topWrapper || !handle) return;
+            
+            function updateSlider(x) {
+                const rect = container.getBoundingClientRect();
+                let percentage = ((x - rect.left) / rect.width) * 100;
+                percentage = Math.max(0, Math.min(100, percentage));
+                
+                topWrapper.style.width = percentage + '%';
+                handle.style.left = percentage + '%';
+            }
+            
+            container.addEventListener('mousemove', function(e) {
+                updateSlider(e.clientX);
+            });
+            
+            container.addEventListener('touchmove', function(e) {
+                if (e.touches.length > 0) {
+                    updateSlider(e.touches[0].clientX);
+                }
+            });
+            
+            container.addEventListener('click', function(e) {
+                updateSlider(e.clientX);
+            });
+        });
+    </script>
 
     <footer>
         <div class="footer-content">
