@@ -297,6 +297,108 @@ li {
     margin-bottom: 10px;
 }
 
+/* Image Comparison Slider */
+.comparison-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.comparison-image {
+    width: 100%;
+    display: block;
+}
+
+.comparison-image.before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-right: 3px solid white;
+}
+
+.comparison-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.comparison-overlay img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+.comparison-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: white;
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.comparison-slider::after {
+    content: "◄ ►";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.comparison-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.comparison-labels span {
+    padding: 5px 15px;
+    background: var(--highlight-bg);
+    border-radius: 4px;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     .nav-links { display: none; } /* Simplified for academic static scope */
