@@ -7,12 +7,24 @@ const footerHTML = `
         </div>
         <div class="footer-section">
             <h4>Quick Links</h4>
-            <p><u><a href="index.html">Home</a></u> | <u><a href="pros.html">Pros</a></u> | <u><a href="cons.html">Cons</a></u></p>
-            <p><u><a href="ethics.html">Ethics</a></u> | <u><a href="team.html">Team</a></u> | <u><a href="references.html">References</a></u></p>
+            <p>
+                <a href="index.html">Home</a>
+                |
+                <a href="pros.html">Benefits</a>
+                |
+                <a href="cons.html">Impacts</a>
+            </p>
+            <p>
+                <a href="references.html">References</a>
+                |
+                <a href="ethics.html">Ethics &amp; License</a>
+                |
+                <a href="team.html">Our Team</a>
+            </p>
         </div>
         <div class="footer-section">
             <h4>License</h4>
-            <p><u><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a></u></p>
+            <p>The content of this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).</a></p>
         </div>
     </div>
     <div class="footer-bottom">
@@ -21,9 +33,18 @@ const footerHTML = `
 </footer>
 `;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const placeholder = document.getElementById('footer-placeholder');
+document.addEventListener("DOMContentLoaded", () => {
+    const placeholder = document.getElementById("footer-placeholder");
     if (placeholder) {
         placeholder.innerHTML = footerHTML;
     }
 });
+
+fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        const placeholder = document.getElementById("footer-placeholder");
+        if (placeholder) {
+            placeholder.innerHTML = data;
+        }
+    });
