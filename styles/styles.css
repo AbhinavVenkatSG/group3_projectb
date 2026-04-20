@@ -382,6 +382,7 @@ footer {
 }
 
 .footer-section {
+    color: #ffffff;
     flex: 1;
     min-width: 250px;
 }
@@ -396,7 +397,7 @@ footer {
     border-top: 1px solid #34495e;
     padding-top: 20px;
     max-width: 1200px;
-    color: #bdc3c7;
+    color: #e2e8f0;
     font-size: 0.85rem;
     text-align: center;
 }
@@ -411,6 +412,10 @@ footer a {
 footer a:hover {
     color: #95f697;
     text-decoration-thickness: 2px;
+}
+
+footer p {
+    color: #f5f7fa;
 }
 
 /* Accessibility & Utils */
