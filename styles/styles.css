@@ -330,7 +330,7 @@ li {
 .comparison-img-top {
     display: block;
     height: 100%;
-    width: auto;
+    width: 800px;
     max-width: none;
 }
 

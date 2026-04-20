@@ -50,25 +50,25 @@
             
             <div class="data-box">
                 <h4>Lake Urmia: A Visual Example of Environmental Change</h4>
-                <p>Lake Urmia in Iran was once one of the largest hypersaline lakes in the world. Use the slider to compare satellite images showing the lake when it was replenished (April 2019) versus when it had dried significantly (September 2023). This demonstrates how digital monitoring documents climate shifts.</p>
+                <p>Lake Urmia in Iran was once one of the largest hypersaline lakes in the world. Use the slider to compare satellite images showing the lake when it was filled (June 2021) versus when it had dried significantly (November 2021). This demonstrates how digital monitoring documents climate shifts.</p>
                 
                 <div class="comparison-slider-container">
-                    <div class="comparison-image-wrapper">
-                        <img src="images/lake-urmia-dried.jpg" alt="Lake Urmia - September 2023 (Dried)" class="comparison-img-bottom">
+                    <div class="comparison-image-wrapper" id="lakeUrmiaSlider">
+                        <img src="images/lake_urmia_nov_2021_after.jpg" alt="Lake Urmia - November 2021 (After)" class="comparison-img-bottom">
                         <div class="comparison-img-top-wrapper">
-                            <img src="images/lake-urmia-filled.jpg" alt="Lake Urmia - April 2019 (Filled)" class="comparison-img-top">
+                            <img src="images/lake_urmia_june_2021_before.jpg" alt="Lake Urmia - June 2021 (Before)" class="comparison-img-top">
                         </div>
                         <div class="comparison-slider-handle">
                             <span class="slider-arrow">&#8644;</span>
                         </div>
                     </div>
                     <div class="comparison-labels">
-                        <span class="label-before">April 2019 - Lake Filled</span>
-                        <span class="label-after">September 2023 - Lake Dried</span>
+                        <span class="label-before">June 2021 - Lake Filled</span>
+                        <span class="label-after">November 2021 - Lake Dried</span>
                     </div>
                 </div>
                 
-                <p class="source-note"><strong>Source:</strong> NASA Earth Observatory. Images acquired by MODIS on NASA's Terra satellite and OLI-2 on Landsat 9. <a href="https://earthobservatory.nasa.gov/images/144848/reviving-the-shriveled-lake-urmia" target="_blank">View original source</a></p>
+                <p class="source-note"><strong>Source:</strong> NASA Earth Observatory. Images taken by the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument on NASA's Aqua satellite. <a href="https://science.nasa.gov/earth/drying-lake-urmia-iran/" target="_blank">View original source</a></p>
             </div>
         </section>
 
@@ -96,7 +96,7 @@
                 <p>The climate spiral is a powerful visualization showing global temperature anomalies from 1880 to the present. This animated representation makes complex climate data accessible and understandable for everyone.</p>
                 <div class="video-container">
                     <video controls autoplay muted loop playsinline>
-                        <source src="videos/climate-spiral.mp4" type="video/mp4">
+                        <source src="videos/GISTEMP_Spiral_English_degC_2160p60.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -132,34 +132,39 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const container = document.querySelector('.comparison-image-wrapper');
-            const topWrapper = document.querySelector('.comparison-img-top-wrapper');
-            const topImg = document.querySelector('.comparison-img-top');
-            const handle = document.querySelector('.comparison-slider-handle');
+            const wrapper = document.getElementById('lakeUrmiaSlider');
+            if (!wrapper) return;
             
-            if (!container || !topWrapper || !handle) return;
+            const topWrapper = wrapper.querySelector('.comparison-img-top-wrapper');
+            const handle = wrapper.querySelector('.comparison-slider-handle');
             
-            function updateSlider(x) {
-                const rect = container.getBoundingClientRect();
-                let percentage = ((x - rect.left) / rect.width) * 100;
+            if (!topWrapper || !handle) return;
+            
+            function updateSlider(pageX) {
+                const rect = wrapper.getBoundingClientRect();
+                let percentage = ((pageX - rect.left) / rect.width) * 100;
                 percentage = Math.max(0, Math.min(100, percentage));
                 
                 topWrapper.style.width = percentage + '%';
                 handle.style.left = percentage + '%';
             }
             
-            container.addEventListener('mousemove', function(e) {
-                updateSlider(e.clientX);
+            // Mouse events
+            wrapper.addEventListener('mousemove', function(e) {
+                updateSlider(e.pageX);
             });
             
-            container.addEventListener('touchmove', function(e) {
+            // Touch events for mobile
+            wrapper.addEventListener('touchmove', function(e) {
+                e.preventDefault();
                 if (e.touches.length > 0) {
-                    updateSlider(e.touches[0].clientX);
+                    updateSlider(e.touches[0].pageX);
                 }
-            });
+            }, { passive: false });
             
-            container.addEventListener('click', function(e) {
-                updateSlider(e.clientX);
+            // Click to jump
+            wrapper.addEventListener('click', function(e) {
+                updateSlider(e.pageX);
             });
         });
     </script>
