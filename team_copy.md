@@ -7,7 +7,7 @@
 ---
 
 ## The Research Group
-[cite_start]Our team is composed of five members dedicated to analyzing the bidirectional relationship between technology and the environment[cite: 24]:
+Our team is composed of five members dedicated to analyzing the bidirectional relationship between technology and the environment:
 * **Abhinav Venkat**
 * **Blessed Cheryl Kevin**
 * **Anh Dung Phan**
@@ -17,7 +17,7 @@
 ---
 
 ## Our Collaboration Process
-[cite_start]To complete this project, we maintained a structured workflow to ensure technical accuracy and clear communication[cite: 43, 52]:
+To complete this project, we maintained a structured workflow to ensure technical accuracy and clear communication:
 
 * **Regular Meetings:** We held consistent team sync-ups to review research findings and coordinate our website layout.
 * **Communication:** We used Microsoft Teams as our central hub for all project chats and document sharing.
