@@ -49,12 +49,3 @@ document.addEventListener("DOMContentLoaded", () => {
         placeholder.innerHTML = footerHTML;
     }
 });
-
-fetch("components/footer.html")
-    .then((response) => response.text())
-    .then((data) => {
-        const placeholder = document.getElementById("footer-placeholder");
-        if (placeholder) {
-            placeholder.innerHTML = data;
-        }
-    });
