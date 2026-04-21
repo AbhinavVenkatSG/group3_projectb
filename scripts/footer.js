@@ -10,9 +10,9 @@ const footerHTML = `
             <p>
                 <a href="index.html">Home</a>
                 |
-                <a href="pros.html">Benefits</a>
+                <a href="pros.html">Climate Solutions</a>
                 |
-                <a href="cons.html">Impacts</a>
+                <a href="cons.html">Environmental Costs</a>
             </p>
             <p>
                 <a href="references.html">References</a>
