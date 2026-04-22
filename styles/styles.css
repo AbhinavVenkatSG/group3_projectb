@@ -511,3 +511,25 @@ td {
         justify-content: center;
     }
 }
+
+ol.ieee {
+  font-family: "Times New Roman", Times, serif;
+  counter-reset: ref;
+  list-style: none;
+  padding-left: 0;
+}
+
+ol.ieee li {
+  counter-increment: ref;
+  position: relative;
+  padding-left: 3.5em;
+  margin-bottom: 0.5em;
+}
+
+ol.ieee li::before {
+  content: "[" counter(ref) "]";
+  position: absolute;
+  left: 0;
+  width: 3em;
+  text-align: left;
+}
