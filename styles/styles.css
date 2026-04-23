@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
+    padding-top: 40px;
     min-height: 100vh;
     color: var(--text-color);
     line-height: 1.6;
@@ -32,11 +33,14 @@ body {
 
 /* Navigation */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
 }
 
 nav {
@@ -109,9 +113,10 @@ nav {
 /* Main Content */
 main {
     flex: 1;
+    margin-top: 40px;
     margin: 40px auto;
     margin-top: var(--nav-height);
-    padding: 0 20px;
+    padding: 0 40px;
     width: 100%;
     max-width: 1100px;
 }
@@ -513,23 +518,23 @@ td {
 }
 
 ol.ieee {
-  font-family: "Times New Roman", Times, serif;
-  counter-reset: ref;
-  list-style: none;
-  padding-left: 0;
+    counter-reset: ref;
+    padding-left: 0;
+    font-family: "Times New Roman", Times, serif;
+    list-style: none;
 }
 
 ol.ieee li {
-  counter-increment: ref;
-  position: relative;
-  padding-left: 3.5em;
-  margin-bottom: 0.5em;
+    position: relative;
+    counter-increment: ref;
+    margin-bottom: 0.5em;
+    padding-left: 3.5em;
 }
 
 ol.ieee li::before {
-  content: "[" counter(ref) "]";
-  position: absolute;
-  left: 0;
-  width: 3em;
-  text-align: left;
+    position: absolute;
+    left: 0;
+    width: 3em;
+    content: "[" counter(ref) "]";
+    text-align: left;
 }
