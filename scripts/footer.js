@@ -8,16 +8,14 @@ const footerHTML = `
         <div class="footer-section">
             <h4>Quick Links</h4>
             <p>
-                <a href="index.html">Home</a>
-                |
                 <a href="pros.html">Climate Solutions</a>
                 |
                 <a href="cons.html">Environmental Costs</a>
             </p>
             <p>
-                <a href="references.html">References</a>
+                <a href="index.html">Home</a>
                 |
-                <a href="ethics.html">Ethics &amp; License</a>
+                <a href="ethics.html">Ethics</a>
                 |
                 <a href="team.html">Our Team</a>
             </p>
